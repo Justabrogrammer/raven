@@ -1,0 +1,274 @@
+/* Reset some default styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font, with a fallback to a generic sans-serif font */
+}
+
+h1, h2, h3, p {
+    font-family: 'Roboto', sans-serif; /* Apply the font to specific elements like headings and paragraphs */
+}
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    margin: 0 auto;
+    /* margin-top: 10px; */
+    justify-content: space-around;
+    border-top: 2px #3847d3 solid;
+    border-bottom: 2px #3847d3 solid;
+    padding: 20px;
+}
+.contact-info p{
+    margin-left: 10px;
+}
+.contact-info p i{
+    margin-right: 5px;
+    color: #3847d3;
+}
+.parallax {
+    background-image: url('asset1.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.parallax-content {
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+.banner-btn{
+    margin-top: 10px;
+    background-color: #3847d3;
+    color: #ffffff;
+    font-weight: 600;
+    width: 10rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+}
+.banner-btn:hover{
+    background-color: #525fd3;
+}
+/* Add the following styles for the "About Us" section */
+.about-us {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.parallax-about {
+    background-image: url('asset3.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.about-content {
+    background-color: #ffffff8c;
+    border-radius: 10px;
+    padding: 70px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+@media (max-width: 768px) {
+    .parallax-about {
+        height: 400px;
+    }
+
+    .about-content {
+        max-width: 90%;
+    }
+}
+/* Add the following styles for the service cards */
+.services {
+    background-color: #f5f5f5;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card i {
+    font-size: 36px;
+    color: #3498db;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.service-card p {
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        max-width: 90%;
+    }
+}
+/* Add the following styles for the "Contact" section */
+.contact {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.parallax-contact {
+    background-image: url('asset8.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+
+.contact-content {
+    background-color: rgba(10, 10, 10, 0.575);
+    border-radius: 0px 0px 10px 10px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .parallax-contact {
+        height: 400px;
+    }
+
+    .contact-content {
+        max-width: 90%;
+    }
+}
+
+/* Style the footer */
+.footer {
+    background-color: #333; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px 0;
+}
+
+/* Center the content in the footer */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style individual footer blocks */
+.footer-block {
+    flex: 1;
+    margin: 10px;
+    text-align: left;
+}
+
+/* Style headings in the footer blocks */
+.footer-block h3 {
+    font-size: 18px;
+}
+
+/* Style links in the footer */
+.footer-block ul{
+    list-style: none;
+}
+.footer-block a {
+    color: #fff; /* Link text color */
+    text-decoration: none;
+}
+
+/* Style social media icons */
+.footer-block i {
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.copyright {
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-block {
+        flex: 1 1 100%; /* On smaller screens, make each block take the full width */
+        text-align: center;
+    }
+}
